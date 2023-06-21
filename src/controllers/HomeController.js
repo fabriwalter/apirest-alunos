@@ -1,6 +1,6 @@
 import Aluno from '../models/Aluno';
 
-class HomeControler {
+class HomeController {
   async index(req, res) {
     const novoAluno = await Aluno.create({
       nome: 'Maria',
@@ -14,4 +14,4 @@ class HomeControler {
   }
 }
 
-export default new HomeControler();
+export default new HomeController();
